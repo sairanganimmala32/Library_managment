@@ -21,7 +21,7 @@ This project demonstrates the implementation of a Library Management System usin
 ## Project Structure
 
 ### 1. Database Setup
-![ERD](https://github.com/najirh/Library-System-Management---P2/blob/main/library_erd.png)
+[![ERD](https://github.com/najirh/Library-System-Management---P2/blob/main/library_erd.png)](https://github.com/sairanganimmala32/Library_managment/blob/main/Screenshot%202024-09-25%20145115.png)
 
 - **Database Creation**: Created a database named `library_db`.
 - **Table Creation**: Created tables for branches, employees, members, books, issued status, and return status. Each table includes relevant columns and relationships.
