@@ -372,20 +372,21 @@ Description: Write a CTAS query to create a new table that lists each member and
     Total fines
 
     ```sql
-    create table overdues as 
-SELECT i.issued_member_id,
-count(i.issued_id) as no_of_overdue_books,
-sum(b.rental_price)+ (0.5*(current_date() - INTERVAL 1 month)) as total_fines
-FROM issued as i
-join return_status as r
-on i.issued_id = r.issued_id
-join books as b
-on b.isbn = i.issued_book_isbn
-where i.issued_date < current_date() - INTERVAL 1 month
-group by i.issued_member_id
-order by total_fines
-;
-select *from overdues;
+    create table overdues as
+    SELECT i.issued_member_id,
+    count(i.issued_id) as no_of_overdue_books,
+    sum(b.rental_price)+ (0.5*(current_date() - INTERVAL 1 month)) as total_fines
+    FROM issued as i
+    join return_status as r
+    on i.issued_id = r.issued_id
+    join books as b
+    on b.isbn = i.issued_book_isbn
+    where i.issued_date < current_date() - INTERVAL 1 month
+    group by i.issued_member_id
+    order by total_fines   
+    ;
+    select *from overdues;
+
 ```
 
 
