@@ -372,6 +372,7 @@ Description: Write a CTAS query to create a new table that lists each member and
     Total fines
 
     ```sql
+
     create table overdues as
     SELECT i.issued_member_id,
     count(i.issued_id) as no_of_overdue_books,
