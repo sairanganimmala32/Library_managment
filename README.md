@@ -388,10 +388,7 @@ Description: Write a CTAS query to create a new table that lists each member and
     ;
     select *from overdues;
 
-```
-
-
-
+    ```
 ## Reports
 
 - **Database Schema**: Detailed table structures and relationships.
