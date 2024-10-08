@@ -386,7 +386,6 @@ group by i.issued_member_id
 order by total_fines
 ;
 select *from overdues;
-
 ```
 
 
